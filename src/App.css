@@ -33,14 +33,12 @@
 .PokedexBody {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 5rem;
-    height: 95%;
 }
 
 .PokemonTile {
     display: flex;
-    width: 10rem;
+    width: 25%;
     flex-direction: column;
 }
 

@@ -3,6 +3,7 @@ import React from 'react'
 export default function PokemonTile({ name, url }) {
     const number = createDexNumber(url.split("/").at(-2)),
         pokename = capitalization(name);
+
     return (
         <div className="PokemonTile">
             <img src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${number}.png`} alt={pokename} />
