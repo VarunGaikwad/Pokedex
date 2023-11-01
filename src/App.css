@@ -1,19 +1,55 @@
+@import url(https://db.onlinewebfonts.com/c/073a3b73a63a87e100f6bb8f003fc0d3?family=Flexo-Demi);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #eee;
+    font-family: "Flexo-Demi";
 }
 
 .App {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #eee;
 }
 
-.MainBody {
-    width: 75%;
+.App__Body {
+    width: 50%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #aaa;
-    background-clip: border-box;
+}
+
+.App__Body__Header {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+.PokedexBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5rem;
+    height: 95%;
+}
+
+.PokemonTile {
+    display: flex;
+    width: 10rem;
+    flex-direction: column;
+}
+
+.PokemonTile>img {
+    background-color: snow;
+    margin: .25rem;
+    border-radius: 20px;
+}
+
+.PokemonTile>span {
+    margin-left: 1.5rem;
 }
