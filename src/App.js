@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <div className="MainBody">
         <div>
-          Pokédexasdas
+          Varun
         </div>
       </div>
     </div>
