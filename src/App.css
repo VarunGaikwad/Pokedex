@@ -4,17 +4,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Flexo-Demi";
+    font-family: "Flexo-Demi";    
+}
+
+body{
+    background-color: #F3EEEA;
 }
 
 header{
     padding: 1rem 0;
-    background-color: gray;
-    color: snow;
+    background-color: #776B5D;
+    color: #8EACCD;
     text-align: center;
 }
 
 main{
-    background-color: red;
     margin: .5rem 1.5rem;
 }
