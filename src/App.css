@@ -1,23 +1,131 @@
 @import url(https://db.onlinewebfonts.com/c/073a3b73a63a87e100f6bb8f003fc0d3?family=Flexo-Demi);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Flexo-Demi";    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Flexo-Demi";
 }
 
-body{
-    background-color: #F3EEEA;
+body {
+  background-color: white;
 }
 
-header{
-    padding: 1rem 0;
-    background-color: #776B5D;
-    color: #8EACCD;
-    text-align: center;
+header {
+  padding: 1rem 0;
+  color: #2769be;
+  text-align: center;
+
+  background-color: #202020;
+  background-image: linear-gradient(#3b3b3b, #202020);
 }
 
-main{
-    margin: .5rem 1.5rem;
+main {
+  margin: 0.5rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pokemon__tile {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 7.5rem;
+  margin: 1rem;
+}
+
+.pokemon__tile > span > img {
+  width: 100%;
+  height: auto;
+}
+
+.pokemon__tile__type > * {
+  margin: 0.5rem;
+}
+
+.pokemon__tile__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemon__tile__info > small {
+  color: #333;
+}
+
+.pokemon__tile__info__name {
+  color: #2769be;
+}
+
+.pokemon__tile__info__type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grass {
+  color: #5cb737;
+}
+
+.poison {
+  color: #88447a;
+}
+
+.fire {
+  color: #d52100;
+}
+
+.flying {
+  color: #556dff;
+}
+
+.water {
+  color: #0080ff;
+}
+
+.bug {
+  color: #83901a;
+}
+
+.fighting {
+  color: #a84d3d;
+}
+
+.psychic {
+  color: #ff227a;
+}
+
+.rock {
+  color: #a59249;
+}
+
+.steel {
+  color: #8e8ea4;
+}
+
+.ice {
+  color: #0af;
+}
+
+.dragon {
+  color: #4e38e9;
+}
+
+.ghost {
+  color: #5454b3;
+}
+
+.ground {
+  color: #bf9926;
+}
+
+.fairy {
+  color: #e76de7;
+}
+
+.electric {
+  color: #c90;
+}
+
+.normal {
+  color: #797964;
 }

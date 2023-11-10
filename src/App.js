@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import PokemonInfoCard from "./PokemonInfoCard";
 
 function App() {
   const pokemon_baseurl = "https://pokeapi.co",
@@ -7,26 +8,33 @@ function App() {
 
   const [pokemons, setPokemons] = useState([]);
 
-  function pokemonAPI(offset, limit) {
-    fetch(`${pokemon_baseurl}${url_suffix}?offset=${offset}&limit=${limit}`)
-      .then((ele) => ele.json())
-      .then((ele) => {
-        setPokemons((prev) => {
-          return [...prev, ...ele.results];
-        });
-      });
-  }
-
   useEffect(() => {
-    pokemonAPI(0, 16);
+    async function pokemonAPI() {
+      for (let i = 1; i <= 151; i++) {
+        try {
+          const response = await fetch(`${pokemon_baseurl}${url_suffix}${i}`);
+          const pokemon = await response.json();
+          
+          setPokemons((prev) => [...prev, pokemon]);
+        } catch (error) {
+          break;
+        }
+      }
+    }
+    pokemonAPI();
   }, []);
 
   return (
     <div className="app">
       <header>
         <h2>Pokémon Database</h2>
+        <h4>List of Pokémon</h4>
       </header>
-      <main>Varun</main>
+      <main>
+        {pokemons.map((element, idx) => (
+          <PokemonInfoCard key={idx} item={element} />
+        ))}
+      </main>
     </div>
   );
 }
