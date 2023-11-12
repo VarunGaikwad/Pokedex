@@ -35,12 +35,12 @@ main {
   margin: 1rem;
 }
 
-.pokemon__tile > span > img {
+.pokemon__tile>span>a>img {
   width: 100%;
   height: auto;
 }
 
-.pokemon__tile__type > * {
+.pokemon__tile__type>* {
   margin: 0.5rem;
 }
 
@@ -49,7 +49,7 @@ main {
   flex-direction: column;
 }
 
-.pokemon__tile__info > small {
+.pokemon__tile__info>small {
   color: #333;
 }
 
@@ -59,7 +59,11 @@ main {
 
 .pokemon__tile__info__type {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.pokemon__tile__info__type>* {
+  margin: .15rem;
 }
 
 .grass {
@@ -128,4 +132,16 @@ main {
 
 .normal {
   color: #797964;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #a42121;
+  text-decoration: underline;
+  outline: 0;
 }
