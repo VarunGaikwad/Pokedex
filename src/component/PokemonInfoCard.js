@@ -1,5 +1,6 @@
 import React from "react";
-import "../App.css";
+import "./PokemonInfoCard.css";
+import { Link } from "react-router-dom";
 
 export default function PokemonInfoCard({ item }) {
   const { name, id, types } = item,
@@ -8,20 +9,20 @@ export default function PokemonInfoCard({ item }) {
   return (
     <div className="pokemon__tile">
       <span>
-        <a href={`/pokemon/${name}`}>
+        <Link to={`/pokemon/${name}`} state={item} >
           <img
             src={`https://img.pokemondb.net/sprites/home/normal/2x/${name}.jpg`}
             alt={pokemon}
             loading="lazy"
           />
-        </a>
+        </Link>
       </span>
       <span className="pokemon__tile__info">
         <small>#{createDexNumber(String(id))}</small>
         <span className="pokemon__tile__info__name">
-          <a href={`/pokemon/${name}`}>
+          <Link to={`/pokemon/${name}`} state={item} >
             {pokemon}
-          </a>
+          </Link>
         </span>
         <small className="pokemon__tile__info__type">
           {types.map((ele, idx) => (

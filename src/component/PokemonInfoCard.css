@@ -1,0 +1,38 @@
+.pokemon__tile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 7.5rem;
+    margin: 1rem;
+}
+
+.pokemon__tile>span>a>img {
+    width: 100%;
+    height: auto;
+}
+
+.pokemon__tile__type>* {
+    margin: 0.5rem;
+}
+
+.pokemon__tile__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon__tile__info>small {
+    color: #333;
+}
+
+.pokemon__tile__info__name {
+    color: #2769be;
+}
+
+.pokemon__tile__info__type {
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon__tile__info__type>* {
+    margin: .15rem;
+}

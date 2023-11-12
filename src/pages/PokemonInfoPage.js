@@ -1,10 +1,18 @@
-import React from 'react'
-import { useParams } from 'react-router-dom';
+import React from "react";
+import { useLocation } from "react-router-dom";
+import "./PokemonInfoPage.css";
 
 export default function PokemonInfoPage() {
-    const { name } = useParams();
-    console.log(name);
+    const { state } = useLocation();
+
     return (
-        <div>PokemonInfoPage</div>
+        <div className="app">
+            <header >
+                <h2>{state.name}</h2>
+            </header>
+            <main >
+                Varun
+            </main>
+        </div>
     );
 }

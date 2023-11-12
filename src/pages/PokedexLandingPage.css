@@ -1,0 +1,14 @@
+.pokedex__header {
+    padding: 1rem 0;
+    color: #2769be;
+    text-align: center;
+    background-color: #202020;
+    background-image: linear-gradient(#3b3b3b, #202020);
+}
+
+.pokedex__main {
+    margin: 0.5rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
