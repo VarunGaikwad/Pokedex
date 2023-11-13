@@ -1,5 +1,9 @@
 @import url(https://db.onlinewebfonts.com/c/073a3b73a63a87e100f6bb8f003fc0d3?family=Flexo-Demi);
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -85,4 +89,89 @@ a:focus {
   color: #a42121;
   text-decoration: underline;
   outline: 0;
+}
+
+.grass-background {
+  color: white;
+  background-color: #5cb737;
+}
+
+.poison-background {
+  color: white;
+  background-color: #88447a;
+}
+
+.fire-background {
+  color: white;
+  background-color: #d52100;
+}
+
+.flying-background {
+  color: white;
+  background-color: #556dff;
+}
+
+.water-background {
+  color: white;
+  background-color: #0080ff;
+}
+
+.bug-background {
+  color: white;
+  background-color: #83901a;
+}
+
+.fighting-background {
+  color: white;
+  background-color: #a84d3d;
+}
+
+.psychic-background {
+  color: white;
+  background-color: #ff227a;
+}
+
+.rock-background {
+  color: white;
+  background-color: #a59249;
+}
+
+.steel-background {
+  color: white;
+  background-color: #8e8ea4;
+}
+
+.ice-background {
+  color: white;
+  background-color: #0af;
+}
+
+.dragon-background {
+  color: white;
+  background-color: #4e38e9;
+}
+
+.ghost-background {
+  color: white;
+  background-color: #5454b3;
+}
+
+.ground-background {
+  color: white;
+  background-color: #bf9926;
+}
+
+.fairy-background {
+  color: white;
+  background-color: #e76de7;
+}
+
+.electric-background {
+  color: white;
+  background-color: #c90;
+}
+
+.normal-background {
+  color: white;
+  background-color: #797964;
 }

@@ -9,7 +9,7 @@ export default function PokemonInfoCard({ item }) {
   return (
     <div className="pokemon__tile">
       <span>
-        <Link to={`/pokemon/${name}`} state={item} >
+        <Link to={`${name}`} state={item} >
           <img
             src={`https://img.pokemondb.net/sprites/home/normal/2x/${name}.jpg`}
             alt={pokemon}
@@ -20,7 +20,7 @@ export default function PokemonInfoCard({ item }) {
       <span className="pokemon__tile__info">
         <small>#{createDexNumber(String(id))}</small>
         <span className="pokemon__tile__info__name">
-          <Link to={`/pokemon/${name}`} state={item} >
+          <Link to={`${name}`} state={item} >
             {pokemon}
           </Link>
         </span>

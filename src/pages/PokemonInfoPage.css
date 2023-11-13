@@ -1,10 +1,11 @@
-.infopage__header {
+.infopage__main {
+  padding: 2rem 5rem;
   display: flex;
-  justify-content: center;
-  padding: 1rem 0;
+  flex-direction: column;
 }
 
-.infopage__main {
-  background-color: red;
-  padding: 0 5rem;
+.infopage__main__first {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }

@@ -1,9 +1,10 @@
 import React from "react";
 import "./PokedexLandingPage.css";
 import PokemonInfoCard from "../component/PokemonInfoCard";
-import pokemons from "../api/gen-1";
+import pokemons from "../api/pokemon-list";
 
 export default function PokedexLandingPage() {
+
     return (
         <div className="pokedex">
             <header className="pokedex__header">
