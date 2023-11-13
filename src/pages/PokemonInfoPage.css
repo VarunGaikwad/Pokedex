@@ -1,0 +1,10 @@
+.infopage__header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.infopage__main {
+  background-color: red;
+  padding: 0 5rem;
+}
